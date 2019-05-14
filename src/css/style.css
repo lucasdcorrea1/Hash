@@ -1,3 +1,7 @@
+body {
+  background: #e3eef9;
+}
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   text-align: center;
@@ -155,38 +159,125 @@ footer .bomholtm a .fa-github-alt {
 }
 
 .squar {
-  background: #030320;
-  width: 57%;
-  margin: 3%;
-  border-radius: 29px;
-  padding: 1%;
-  position: relative;
-  height: 357px;
-  left: 22%;
+  background: #151e28;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin: 4% auto;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .squar .squar_inside {
-  background: #dfe1e2;
-  position: relative;
-  width: 100%;
-  min-height: 100px;
+  background: #e3eef9;
   border-radius: 10px;
-  margin: 1%;
-  top: 3%;
-  right: 1%;
+  height: 100px;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  text-align: center;
   border-width: medium;
-  border-style: solid;
-  border-color: #00f;
-}
-
-.squar .squar_inside a {
-  color: #dc3545;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgba(255, 233, 0, 0.43);
 }
 
 .squar .squar_inside .img_res {
-  max-width: 40%;
-  position: relative;
-  left: 30%;
-  top: 3px;
+  max-width: 50%;
+  padding-top: 10%;
+}
+
+@media screen and (min-width: 350px) {
+  .squar {
+    height: 46vh;
+    width: 100%;
+  }
+  .squar .squar_inside {
+    height: 100px;
+    max-width: 100%;
+    margin-left: 0%;
+  }
+  .squar .squar_inside .img_res {
+    max-width: 86%;
+    padding-top: 18%;
+  }
+}
+
+@media screen and (min-width: 351px) {
+  .squar {
+    height: 83px;
+    height: 60vh;
+    width: 100%;
+  }
+  .squar .squar_inside {
+    height: 100px;
+    max-width: 100%;
+    margin-left: 0%;
+  }
+  .squar .squar_inside .img_res {
+    max-width: 86%;
+    padding-top: 18%;
+  }
+}
+
+@media screen and (min-width: 365px) {
+  .squar {
+    height: 65vh;
+    width: 50%;
+  }
+  .squar .squar_inside {
+    height: 100px;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  .squar .squar_inside .img_res {
+    max-width: 50%;
+    padding-top: 10%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .squar {
+    height: 65vh;
+    width: 50%;
+  }
+  .squar .squar_inside {
+    height: 100px;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  .squar .squar_inside .img_res {
+    max-width: 50%;
+    padding-top: 10%;
+  }
+}
+
+.scoreboard img {
+  max-width: 30%;
+}
+
+.gamer1 {
+  float: left;
+  margin-left: 4%;
+}
+
+.gamer2 {
+  float: right;
+  margin-right: 4%;
+}
+
+.conteiner .scoreboard {
+  margin: 4% auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.scoreboard{
+
+    img{
+        max-width: 30%;
+    }
+   
+}
+.gamer1{
+float: left;
+margin-left: 4%;
+}
+.gamer2{
+float: right;
+margin-right: 4%;
+}
+.conteiner {
+    .scoreboard{
+        margin: 4% auto;
+    }
+}

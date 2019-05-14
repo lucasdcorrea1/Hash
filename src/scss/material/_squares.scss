@@ -1,36 +1,100 @@
 .squar {
-    background: #030320;
-    width: 57%;
-    margin: 3%;
-    border-radius: 29px;
-    padding: 1%;
-    position: relative;
-    height: 357px;
-    left: 22%;
+    background: #151e28;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 4% auto;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     .result_game {
         
     }
     .squar_inside{
-        background: #dfe1e2;
-        position: relative;
-        width: 100%;
-        min-height: 100px;
-        border-radius: 10px;
-        margin: 1%;
-        top: 3%;
-        right: 1%;
-        border-width: medium;
-        border-style: solid;
-        border-color: #00f;
-        a{
-            color: #dc3545;
-        }
-        .img_res{
-            max-width: 40%;
-            position: relative;
-            left: 30%;
-            top: 3px;
-        }
-    
-    }
+      background: #e3eef9;
+      border-radius: 10px;
+      height: 100px;
+      max-width: 80%;
+      margin-left: 10%;
+      margin-top: 10%;
+      text-align: center;
+      border-width: medium;
+      -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 5px 5px rgba(255, 233, 0, 0.43);
+      .img_res{
+          max-width: 50%;
+          padding-top: 10%;
+      }
+ 
   }
+ 
+}
+
+@media screen and (min-width: 350px) {
+  .squar {
+    height: 46vh;
+    width: 100%;
+    .squar_inside{
+      height: 100px;
+      max-width: 100%;
+      margin-left: 0%;
+      .img_res{
+        max-width: 86%;
+        padding-top: 18%;
+      }
+    }
+    
+  }
+}
+@media screen and (min-width: 351px) {
+  .squar {
+height: 83px;
+    height: 60vh;
+    width: 100%;
+    .squar_inside{
+      height: 100px;
+      max-width: 100%;
+      margin-left: 0%;
+      .img_res{
+        max-width: 86%;
+        padding-top: 18%;
+      }
+    }
+    
+  }
+}
+@media screen and (min-width: 365px) {
+  .squar {
+    height: 65vh;
+    width: 50%;
+    .squar_inside{
+      height: 100px;
+      max-width: 80%;
+      margin-left: 10%;
+      .img_res{
+        max-width: 50%;
+        padding-top: 10%;
+    }
+    }
+   
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .squar {
+    height: 65vh;
+    width: 50%;
+    .squar_inside{
+      height: 100px;
+      max-width: 80%;
+      margin-left: 10%;
+      .img_res{
+        max-width: 50%;
+        padding-top: 10%;
+    }
+    }
+   
+  }
+}
