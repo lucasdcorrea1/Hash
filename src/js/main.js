@@ -35,7 +35,7 @@ function initHash(inOff) {
 function addImag(newId) {
   var imgX = "x_res";
   var imgO = "o_res";
-  console.log(count)
+  
   if (count % 2 == 0) {
     x.push(newId);
     $("#" + newId).append("<a><img src='src/img/" + imgX + ".png' class='img_res' alt='...'></a>");
@@ -54,7 +54,7 @@ function possibleWinner() {
       if (checkWinner(o.sort())) {
         // alert('jogador 2 Ganhou: ' + o)
         countWinnerO++
-        $("#scoreboard").text(countWinnerX + '  X  ' + countWinnerO);
+        $("#scoreboard_result").text(countWinnerX + '  X  ' + countWinnerO);
         resetRounds(false)
       }else if(count > 8){
         resetRounds(true)
@@ -62,7 +62,7 @@ function possibleWinner() {
     } else {
       if (checkWinner(x.sort())) {
         countWinnerX++
-        $("#scoreboard").text(countWinnerX + '  X  ' + countWinnerO);
+        $("#scoreboard_result").text(countWinnerX + '  X  ' + countWinnerO);
         resetRounds(false)
       }else if(count > 8){
         resetRounds(true)
@@ -105,26 +105,18 @@ function checkWinner(winningTest) {
 
 function resetRounds(velha) {
   if (velha == true) {
-    newId = 0;
-    count = 0;
-    id = [];
-    x = [];
-    o = [];
     alert("Velha")
   }
   if (countWinnerO == 2 || countWinnerX == 2) {
     if (countWinnerO < countWinnerX) {
-
       alert("Fim do jogo!!! Vencedor: X");
-
     } else {
       alert("Fim do jogo!!! Vencedor: O");
-
     }
     countWinnerX = 0;
     countWinnerO = 0;
   }
-  $("#scoreboard").text(countWinnerX + '  X  ' + countWinnerO);
+  $("#scoreboard_result").text(countWinnerX + '  X  ' + countWinnerO);
   setTimeout(function () {
     newId = 0;
     count = 0;
@@ -134,7 +126,7 @@ function resetRounds(velha) {
 
     $(".squar_inside").empty();
     ;
-  }, 1000);
+  }, 700);
 
 
 };
