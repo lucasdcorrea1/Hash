@@ -1,2 +1,2 @@
 # hash
-https://lucasdcorrea1.github.io/hash/
+https://lucasdcorrea1.github.io/Hash/
