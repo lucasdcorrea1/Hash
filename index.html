@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>hash</title>
-  <link rel="icon" href="./src/img/logo.png">
+  <title>HASH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Press+Start+2P" rel="stylesheet">
-  <script defer src="https://rawgit.com/bomholtm/fcc/master/_assets/js/brands.js"></script>
-  <script defer src="https://rawgit.com/bomholtm/fcc/master/_assets/js/solid.js"></script>
-  <script defer src="https://rawgit.com/bomholtm/fcc/master/_assets/js/fontawesome.js"></script>
-  <link rel='stylesheet' href='https://rawgit.com/bomholtm/fcc/master/_assets/css/bootstrap413.min.css'>
-  <link href='./src/css/style.css' rel='stylesheet'>
 
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Press+Start+2P" rel="stylesheet">
+
+  <!-- Bootstrap (sem integrity/crossorigin para evitar bloqueio por SRI) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- Font Awesome (para os ícones do footer) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
 
   <div class="scoreboard_conteiner">
-    <h1 id="scoreboard_result">
-      0 X 0
-    </h1>
-    <h1 class="gamer1" id="gamer1">
-      player 1
-    </h1>
-    <h1 class="gamer2" id="gamer2">
-      player 2 
-    </h1>
+    <h1 id="scoreboard_result">0 X 0</h1>
+    <h1 class="gamer1" id="gamer1">player 1</h1>
+    <h1 class="gamer2" id="gamer2">player 2</h1>
   </div>
-
 
   <div class="conteiner squar">
     <div class="col">
-      <div class="squar_inside" id="1"></div>
-      <div class="squar_inside" id="2"></div>
-      <div class="squar_inside" id="3"></div>
+      <div class="squar_inside" id="cell-1"></div>
+      <div class="squar_inside" id="cell-2"></div>
+      <div class="squar_inside" id="cell-3"></div>
     </div>
 
     <div class="col">
-      <div class="squar_inside" id="4"></div>
-      <div class="squar_inside" id="5"></div>
-      <div class="squar_inside" id="6"></div>
+      <div class="squar_inside" id="cell-4"></div>
+      <div class="squar_inside" id="cell-5"></div>
+      <div class="squar_inside" id="cell-6"></div>
     </div>
 
     <div class="col">
-      <div class="squar_inside" id="7"></div>
-      <div class="squar_inside" id="8"></div>
-      <div class="squar_inside" id="9"></div>
+      <div class="squar_inside" id="cell-7"></div>
+      <div class="squar_inside" id="cell-8"></div>
+      <div class="squar_inside" id="cell-9"></div>
     </div>
   </div>
 
@@ -61,30 +58,22 @@
             <stop stop-color="#ffe600" offset="100%" />
           </linearGradient>
         </svg>
-        <a href="https://www.linkedin.com/in/lucas-damas-corr%C3%AAa-882806176/" target="_blank"
-          rel="noopener noreferrer">
-          <span>
-            <i class="fab fa-linkedin icon" data-fa-transform="rotate-40 shrink-1"></i>
-          </span>
+        <a href="https://www.linkedin.com/in/lucas-damas-corr%C3%AAa-882806176/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin icon"></i>
         </a>
         <a href="https://www.facebook.com/lucas.damas.35" target="_blank" rel="noopener noreferrer">
-          <span>
-            <i class="fab fa-github-square icon" data-fa-transform="rotate--20 flip-v up-4"></i>
-          </span>
+          <i class="fab fa-github-square icon"></i>
         </a>
         <a href="https://www.instagram.com/lucas_damas_/" target="_blank" rel="noopener noreferrer">
-          <span>
-            <i class="fab fa-instagram icon" data-fa-transform="rotate-10 flip-h down-2"></i>
-          </span>
+          <i class="fab fa-instagram icon"></i>
         </a>
       </div>
       <h4><span>HASH!</span></h4>
       <p>Sign up with your email address to receive the latest news and updates</p>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input name="email" id="email" type="email" placeholder="e.g. example@domain.com" required>
-        <input id="submit" type="submit" class="d-none">
         <button class="submit" type="submit">
-          <i class="fas fa-paper-plane" data-fa-transform="rotate-20 grow-4 up-1"></i>
+          <i class="fas fa-paper-plane"></i>
         </button>
       </form>
     </div>
@@ -95,11 +84,14 @@
         github / lucasdcorrea1
       </a>
     </div>
-
   </footer>
+
+  <!-- jQuery e plugins -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <!-- Seu script -->
+  <script src="./src/js/main.js"></script>
 </body>
-<script src='https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery331.min.js'></script>
-<script src='https://rawgit.com/bomholtm/fcc/master/_assets/js/popper1143.min.js'></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="./src/js/main.js"></script>
+</html>
